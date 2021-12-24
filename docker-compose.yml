@@ -24,7 +24,7 @@ services:
   volumes:
    - db-data:/var/lib/mysql
   environment:
-   MYSQL_ROOT_PASSWORD: 'password'
+   MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
   restart: always
 
  phpmyadmin:
