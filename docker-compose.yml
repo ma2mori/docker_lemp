@@ -39,7 +39,7 @@ services:
     environment:
       PMA_HOST: mysql
     ports:
-      - ${IP}8080:80
+      - ${IP}:8080:80
     depends_on:
       - mysql
     restart: always
